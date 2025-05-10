@@ -72,6 +72,10 @@ E..4c.@.@............>......../......(.....
 In tcpdump output, each line represents a packet and contains the following information:
 (Note: server is served at port 6542 , client is served at port 60990 )
 
+while server is listening for incoming connections, it will pause at s.accept() until client connect. 
+client will connect to server at port 6542 using s.connect((HOST,PORT)) start three way handshake (SYN,SYN-ACK,ACK) for first 3 events.
+When the connection is established, the client sends a message "Hello, world" to the server.
+
 | Step | Description                          | Flags  |
 | ---- | ------------------------------------ | ------ |
 | 1    | Client sends SYN                     | `[S]`  |
