@@ -5,20 +5,20 @@
 - Analyze network traffic  between server and client using tcpdump
 
 ## How to run Server    
-Open new terminal and run. Server will run at port 6542 and listen for incoming connections. It will pause at s.accept() until client connect.
+At current working directory, open new terminal and run. Server will run at port 6542 and listen for incoming connections. It will pause at s.accept() until client connect.
 ```bash
 python3 echo_server.py
 ```
 
 ## How to run client
-open new terminal and run. Client will connect to server at port 6542 and send message "Hello, world" to server.
+At current working directory, open new terminal and run. Client will connect to server at port 6542 and send message "Hello, world" to server.
 ```bash
 python3 echo_client.py
 ```
 
 ## Capture Data
-Open new terminal and run
-Install tcpdump package in Linux System if not installed
+At current working directory, open new terminal and run
+Install tcpdump package (in Linux System )if not installed
 ```bash
 sudo apt install tcpdump    
 ```
