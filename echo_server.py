@@ -11,7 +11,7 @@ PORT = 6542
 #using with - no need to close socket manually
 #socket.AF_INET : Ipv4 protocol
 #socket.SOCKET_STREAM : protocol - socket type
-#using while True  to accept multiple connections. it will serve one by one client 
+#using while True , it will serve one by one client 
 while True:
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         s.bind((HOST,PORT)) # socket with specific network interface - application can be talked at port
